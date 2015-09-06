@@ -3,16 +3,16 @@ package com.kata;
 public class OperationFactory {
 
 	public Operation getOperation(String operation) {
-		Operation calcOperaiton = new NoOp();
+		Operation calcOperation = new NoOp();
 		switch(operation) {
 		case "+":
-			calcOperaiton = new Add();
+			calcOperation = new Add();
 			break;
 		case "-":
-			calcOperaiton = new Subtract();
+			calcOperation = new Subtract();
 			break;
 		}
-		return calcOperaiton;
+		return calcOperation;
 	}
 
 }
