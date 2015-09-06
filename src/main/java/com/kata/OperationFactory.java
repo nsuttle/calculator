@@ -3,7 +3,7 @@ package com.kata;
 public class OperationFactory {
 
 	public Operation getOperation(String operation) {
-		Operation calcOperaiton = null;
+		Operation calcOperaiton = new NoOp();
 		switch(operation) {
 		case "+":
 			calcOperaiton = new Add();

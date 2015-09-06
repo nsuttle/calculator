@@ -23,26 +23,32 @@ public class CalculatorTest {
 	@Test
 	public void evaluate_WhenSingleNumber() {
 		String result = "5";
-		parserTestable.setCommands(new CommandTestable(result));
+		CommandTestable command = new CommandTestable(result);
+		parserTestable.setCommands(command);
 		testObj.parser = parserTestable;
 		
 		testObj.evaluate(calcString);
 
 		assertEquals(new BigDecimal(result), testObj.getResult());
 		assertEquals(calcString, parserTestable.calcString);
+		assertEquals(true, command.isExecuteCalled());
 		
 	}
 	@Test
 	public void evaluate_WhenMultipleNumber() {
 		String result = "15";
 		String arbitraryNumber = "5";
-		parserTestable.setCommands(new CommandTestable(arbitraryNumber), new CommandTestable(result));
+		CommandTestable [] commands = new CommandTestable [] {new CommandTestable(arbitraryNumber), new CommandTestable(result)};
+		parserTestable.setCommands(commands);
 		testObj.parser = parserTestable;
 		
 		testObj.evaluate(calcString);
 		
 		assertEquals(new BigDecimal(result), testObj.getResult());
 		assertEquals(calcString, parserTestable.calcString);
+		for(CommandTestable ct : commands) {
+			assertEquals(true,ct.isExecuteCalled());
+		}
 	}
 
 	

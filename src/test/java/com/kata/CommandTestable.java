@@ -4,6 +4,9 @@ import java.math.BigDecimal;
 
 public class CommandTestable extends Command {
 
+	private BigDecimal result;
+	private boolean executeCalled;
+
 	public CommandTestable(String operation, String number) {
 		super(operation, number);
 	}
@@ -13,7 +16,6 @@ public class CommandTestable extends Command {
 		setExecute(new BigDecimal(number));
 	}
 
-	private BigDecimal result;
 
 	protected void setExecute(BigDecimal result) {
 		this.result = result;
@@ -21,7 +23,12 @@ public class CommandTestable extends Command {
 	
 	@Override
 	public BigDecimal execute(BigDecimal result) {
+		executeCalled = true;
 		return this.result;
+	}
+
+	public boolean isExecuteCalled() {
+		return executeCalled;
 	}
 	
 }

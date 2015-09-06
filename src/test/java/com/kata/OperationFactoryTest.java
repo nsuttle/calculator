@@ -26,5 +26,12 @@ public class OperationFactoryTest {
 		
 		assertEquals(Subtract.class, operation.getClass());
 	}
+	
+	@Test
+	public void getOperation_WhenOther() throws Exception {
+		Operation operation = testObj.getOperation("arbitrary");
+		
+		assertEquals(NoOp.class, operation.getClass());
+	}
 
 }
