@@ -1,13 +1,15 @@
-package com.kata;
+package com.kata.operation;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.kata.Add;
-import com.kata.Operation;
-import com.kata.OperationFactory;
-import com.kata.Subtract;
+import com.kata.operation.Divide;
+import com.kata.operation.Multiply;
+import com.kata.operation.NoOp;
+import com.kata.operation.Operation;
+import com.kata.operation.OperationFactory;
+import com.kata.operation.Subtract;
 
 public class OperationFactoryTest {
 

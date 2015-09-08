@@ -7,9 +7,9 @@ import java.math.BigDecimal;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.kata.Add;
 import com.kata.Command;
-import com.kata.Operation;
+import com.kata.operation.Add;
+import com.kata.operation.Operation;
 
 public class CommandTest {
 

@@ -2,6 +2,9 @@ package com.kata;
 
 import java.math.BigDecimal;
 
+import com.kata.operation.Operation;
+import com.kata.operation.OperationFactory;
+
 public class Command {
 
 	public Operation operation;

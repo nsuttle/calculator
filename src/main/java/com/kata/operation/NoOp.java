@@ -1,11 +1,12 @@
-package com.kata;
+package com.kata.operation;
 
 import java.math.BigDecimal;
 
-public class Subtract implements Operation {
+public class NoOp implements Operation{
 
+	@Override
 	public BigDecimal execute(BigDecimal result, BigDecimal number) {
-		return result.subtract(number);
+		return result;
 	}
 
 }
