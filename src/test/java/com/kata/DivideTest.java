@@ -15,7 +15,6 @@ public class DivideTest {
 		BigDecimal result = testObject.execute(new BigDecimal(2), new BigDecimal(2));
 		
 		assertEquals(BigDecimal.ONE, result);
-		
 	}
 
 }
