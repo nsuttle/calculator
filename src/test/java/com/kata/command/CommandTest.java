@@ -1,4 +1,4 @@
-package com.kata;
+package com.kata.command;
 
 import static org.junit.Assert.*;
 
@@ -7,7 +7,6 @@ import java.math.BigDecimal;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.kata.Command;
 import com.kata.operation.Add;
 import com.kata.operation.Operation;
 

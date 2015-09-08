@@ -3,6 +3,9 @@ package com.kata;
 import java.util.Arrays;
 import java.util.List;
 
+import com.kata.command.Command;
+import com.kata.command.CommandParser;
+
 public class CommandParserTestable extends CommandParser {
 
 	private Command[] commands;

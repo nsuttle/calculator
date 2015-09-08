@@ -1,4 +1,4 @@
-package com.kata;
+package com.kata.command;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.kata;
+package com.kata.command;
 
 
 import static org.junit.Assert.assertEquals;
@@ -7,9 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
-
-import com.kata.Command;
-import com.kata.CommandParser;
 
 public class CommandParserTest {
 

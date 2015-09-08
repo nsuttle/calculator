@@ -3,6 +3,9 @@ package com.kata;
 import java.math.BigDecimal;
 import java.util.List;
 
+import com.kata.command.Command;
+import com.kata.command.CommandParser;
+
 public class Calculator {
 	BigDecimal result = BigDecimal.ZERO;
 	CommandParser parser = new CommandParser();

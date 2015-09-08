@@ -2,6 +2,8 @@ package com.kata;
 
 import java.math.BigDecimal;
 
+import com.kata.command.Command;
+
 public class CommandTestable extends Command {
 
 	private BigDecimal result;

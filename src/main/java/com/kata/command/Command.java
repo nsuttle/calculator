@@ -1,4 +1,4 @@
-package com.kata;
+package com.kata.command;
 
 import java.math.BigDecimal;
 
