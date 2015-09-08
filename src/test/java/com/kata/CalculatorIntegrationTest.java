@@ -29,4 +29,11 @@ public class CalculatorIntegrationTest {
 		
 		assertEquals(BigDecimal.ONE, testObj.getResult());
 	}
+	
+	@Test
+	public void evaluate_WhenMultiplyTwoNumbers() {
+		testObj.evaluate("2*10");
+		
+		assertEquals(new BigDecimal(20), testObj.getResult());
+	}
 }
