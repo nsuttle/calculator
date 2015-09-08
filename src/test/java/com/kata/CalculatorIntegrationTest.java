@@ -22,4 +22,11 @@ public class CalculatorIntegrationTest {
 
 		assertEquals(new BigDecimal(-7), testObj.getResult());
 	}
+	
+	@Test
+	public void evaluate_WhenDivideTwoNumbers() {
+		testObj.evaluate("2/2");
+		
+		assertEquals(BigDecimal.ONE, testObj.getResult());
+	}
 }
