@@ -14,6 +14,9 @@ public class OperationFactory {
 		case "/":
 			calcOperation = new Divide();
 			break;
+		case "*":
+			calcOperation = new Multiply();
+			break;
 		}
 		return calcOperation;
 	}

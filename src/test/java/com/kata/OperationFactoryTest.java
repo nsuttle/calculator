@@ -28,10 +28,17 @@ public class OperationFactoryTest {
 	}
 	
 	@Test
-	public void getOperation_WhenDvidie() throws Exception {
+	public void getOperation_WhenDivide() throws Exception {
 		Operation operation = testObj.getOperation("/");
 		
 		assertEquals(Divide.class, operation.getClass());
+	}
+	
+	@Test
+	public void getOperation_WhenMultiply() throws Exception {
+		Operation operation = testObj.getOperation("*");
+		
+		assertEquals(Multiply.class, operation.getClass());
 	}
 	
 	@Test
